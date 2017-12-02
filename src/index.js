@@ -24,12 +24,11 @@ export default class IndexPage extends Component {
 				     />
 				 	<Text >{this.inputs.passwordText}</Text>
 				 	<TextInput
-				 	   ref= "username"
 				        style={{height: 40, borderColor: 'gray', borderWidth: 1}}
 				        value={this.text}
 				     />
 				     <Button
-				      onPress={this._onPress()}
+				      onPress={this._onPress}
 					  title="Giriş "
 					  color="#841584"
 					/>
@@ -40,7 +39,7 @@ export default class IndexPage extends Component {
 			);
 	}
 	 _onPress() {
-  		alert(this.ref.username.value);
+  		alert('');
  	}
 }
 const styles = StyleSheet.create({
